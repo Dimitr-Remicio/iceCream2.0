@@ -1,0 +1,105 @@
+<section class="section hero">
+  <div class="container">
+    <div class="hero-title-number-wrapper">
+      <h1 class="hero-title">ice cream made with <span class="hero-title-accent">passion</span></h1>
+      <div class="hero-numbers-wrapper">
+        <div class="hero-number">16</div>
+        <div class="hero-number-text">cafes</div>
+        <div class="hero-number">23</div>
+        <div class="hero-number-text">food trucks</div>
+      </div>
+    </div>
+    <div class="hero-btn-wrapper">
+      <form action="#products-anchor">
+        <input class="btn hero-btn hero-btn3" type="submit" value="Products" />
+      </form>
+      <form action="#how-anchor">
+        <input class="btn hero-btn hero-btn2 btn" type="submit" value="How it's made?" />
+      </form>
+    </div>
+
+    <!-- додали еліпс -->
+    <div class="ellipse"></div>
+
+    <picture class="animate__animated animate__bounce">
+      <source
+        srcset="
+          ./images/desktop/hero/desktop-hero-icecream.png    1x,
+          ./images/desktop/hero/desktop-hero-icecream-2x.png 2x
+        "
+        media="(min-width: 1280px)"
+      />
+      <source
+        srcset="
+          ./images/tab/hero/tab-hero-icecream.png    1x,
+          ./images/tab/hero/tab-hero-icecream-2x.png 2x
+        "
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="
+          ./images/mob/hero/mob-hero-icecream.png    1x,
+          ./images/mob/hero/mob-hero-icecream-2x.png 2x
+        "
+        media="(min-width: 320px)"
+      />
+
+      <img
+        class="hero-img-icecrem"
+        src="./images/mob/hero/mob-hero-icecream.png"
+        loading="lazy"
+        alt="Very tasty ice-cream"
+      />
+    </picture>
+
+    <p class="hero-txt">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+      labore et
+    </p>
+    <button
+      class="btn hero__round-button hero__round-button-size hero__round-button-position"
+      type="button"
+      data-modal-open-video
+    ></button>
+    <picture class="animate__animated animate__bounceInLeft">
+      <source
+        srcset="
+          ./images/desktop/hero/desktop-hero-milk.png    1x,
+          ./images/desktop/hero/desktop-hero-milk-2x.png 2x
+        "
+        media="(min-width: 1280px)"
+      />
+      <source
+        srcset="./images/tab/hero/tab-hero-milk.png 1x, ./images/tab/hero/tab-hero-milk-2x.png 2x"
+        media="(min-width: 768px)"
+      />
+
+      <img
+        class="hero-img-milk"
+        src="./images/tab/hero/tab-hero-milk.png"
+        loading="lazy"
+        alt="white milk"
+      />
+    </picture>
+
+    <picture class="animate__animated animate__bounceInRight">
+      <source
+        srcset="
+          ./images/desktop/hero/desktop-hero-girl.png    1x,
+          ./images/desktop/hero/desktop-hero-girl-2x.png 2x
+        "
+        media="(min-width: 1280px)"
+      />
+      <source
+        srcset="./images/tab/hero/tab-hero-girl.png 1x, ./images/tab/hero/tab-hero-girl-2x.png 2x"
+        media="(min-width: 768px)"
+      />
+      <img
+        class="hero-img-girl"
+        src="./images/tab/hero/tab-hero-girl.png"
+        loading="lazy"
+        alt="cool girl"
+      />
+    </picture>
+  </div>
+</section>

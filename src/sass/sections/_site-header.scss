@@ -1,0 +1,100 @@
+.page-header {
+  padding-top: 6px;
+  background-color: $hero-background;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 38px;
+  }
+}
+
+.page-header__navigation {
+  display: flex;
+  justify-content: space-around;
+
+  @media screen and (min-width: $desktop) {
+    margin-left: -70px;
+  }
+}
+
+.page-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-header__menu {
+  display: none;
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 97px;
+    z-index: 123;
+  }
+}
+
+.page-header__menu-list {
+  display: none;
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.3;
+  }
+}
+
+.page-header__menu-link {
+  padding: 10px 18px;
+  color: $white-color;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.page-header__menu-link:hover,
+.page-header__menu-link:focus {
+  color: $accent-color;
+}
+
+/*.page-header__img {
+  @media screen and (min-width: $tablet) {
+    // margin-right: 27px; /*88px;*/
+// padding-right: 291px;
+/* @media screen and (min-width: $desktop) {
+    // padding-left: 20px;
+    // padding-right: 61px;
+  }
+}*/
+
+.vector {
+  margin-left: 20px;
+  color: $accent-color;
+}
+
+.up__button {
+  padding: 0;
+  box-shadow: 0px 0px 2px 3px $accent-color-secondary;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-image: url(../images/common/arrow-right.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #ffffff;
+  transform: rotate(-90deg);
+  cursor: pointer;
+
+  bottom: 30px;
+  right: 30px;
+  cursor: pointer;
+  display: none;
+  position: fixed;
+  z-index: 999;
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 0px 2px 5px $accent-color-secondary;
+  }
+}
